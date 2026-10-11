@@ -1,0 +1,52 @@
+## Interface: 16001, 120105, 120100, 120001, 120000
+## Title: |cff7fc24aGoblin Gazette|r
+## Notes: Ride Fizzwick's steam trike up the lane and deliver the Goblin Gazette: mailboxes, doorsteps, and the odd window. Part of the Nether addon family.
+## Author: NetherUI
+## Version: 1.0.0
+## IconTexture: Interface\AddOns\GoblinGazette\Media\Icon
+## SavedVariables: GoblinGazetteDB, NetherFamilyDB
+## OptionalDeps: NetherUI, NetherUI_Media, NetherSuite
+## X-License: All Rights Reserved
+## X-NetherSuite: 1
+## X-Nether-Family: 1
+## X-Nether-Order: 104
+## X-Nether-Description: Ride the steam trike up the lane and deliver the Goblin Gazette. Extra! Extra! That's gonna cost extra!
+
+# The Nether family's shared pieces (the same file in every Nether addon)
+NetherFamily.lua
+NetherSound.lua
+NetherChannels.lua
+NetherFont.lua
+
+# Core: namespace, saved data (per character by GUID), generated art and sound manifests, world geometry, the sound
+Core\Init.lua
+Data\Atlas.lua
+Data\World.lua
+Data\Sound.lua
+Core\Assets.lua
+Core\Audio.lua
+
+# The game: the route laid out from a seed, the paper round's rules, the ride's rules, replays, the daily route
+Game\Route.lua
+Game\Round.lua
+Game\Hazards.lua
+Game\Bonus.lua
+Game\Drive.lua
+Game\Replay.lua
+Game\Daily.lua
+Game\Rewards.lua
+
+# Sharing: the leaderboard (checked by replaying each round)
+Comm\Leaderboard.lua
+
+# Screens: the scrolling street, the window, the minimap button
+UI\Stage.lua
+UI\Window.lua
+UI\Screens.lua
+UI\Minimap.lua
+
+# The Nether family: NetherSuite tile (Minigames tab) and the Esc > Options > AddOns page
+Family\Family.lua
+Family\Skin.lua
+Family\Widgets.lua
+Family\Options.lua
