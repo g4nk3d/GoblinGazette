@@ -19,7 +19,7 @@ local ADDON, ns = ...
 local P = { name = ADDON, modules = {} }
 ns.P = P
 
-P.VERSION = "1.0.0"
+P.VERSION = "1.0.1"
 P.SCHEMA = 1
 P.MEDIA = "Interface\\AddOns\\" .. ADDON .. "\\Media\\"
 P.COLOR = "|cff7fc24a"

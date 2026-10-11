@@ -2,7 +2,7 @@
 ## Title: |cff7fc24aGoblin Gazette|r
 ## Notes: Ride Fizzwick's steam trike up the lane and deliver the Goblin Gazette: mailboxes, doorsteps, and the odd window. Part of the Nether addon family.
 ## Author: NetherUI
-## Version: 1.0.0
+## Version: 1.0.1
 ## IconTexture: Interface\AddOns\GoblinGazette\Media\Icon
 ## SavedVariables: GoblinGazetteDB, NetherFamilyDB
 ## OptionalDeps: NetherUI, NetherUI_Media, NetherSuite

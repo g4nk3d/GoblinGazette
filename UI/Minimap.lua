@@ -1,8 +1,8 @@
 --[[ Goblin Gazette - UI/Minimap.lua
 	The minimap button (shown unless switched off: Goblin Gazette is a minigame you open from here or from
 	NetherSuite's Minigames tab). Left-click opens or closes the game; drag it around the minimap's
-	edge; its place is remembered. No libraries: a plain button on the Minimap frame (unnamed, so the
-	addon keeps its single global). ]]
+	edge; its place is remembered. No libraries: a plain button on the Minimap frame, named GoblinGazetteMinimapButton
+	so minimap-button collectors (MinimapButtonButton and the like) find it. ]]
 
 local _, ns = ...
 local P = ns.P
@@ -24,7 +24,7 @@ local function Place()
 end
 
 local function Build()
-	btn = CreateFrame("Button", nil, Minimap)
+	btn = CreateFrame("Button", "GoblinGazetteMinimapButton", Minimap)
 	btn:SetSize(32, 32)
 	btn:SetFrameStrata("MEDIUM")
 	btn:SetFrameLevel(Minimap:GetFrameLevel() + 8)
